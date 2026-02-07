@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio Website">
+    <title>Portfolio | Minimalist Design</title>
+    <!-- Google Fonts: Outfit for a modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="btn-nav">Reach Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <h1 class="hero-title-large">
+                    ANDREW<br>
+                    <span class="gradient-text">BROWN</span>
+                </h1>
+                <div class="hero-details">
+                    <p class="hero-role">Configuration & Deployment Specialist</p>
+                    <p class="hero-desc">Building scalable cloud solutions and visualizing data at Canadian Blood
+                        Services.</p>
+                    <div class="cta-group">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Interactive Gradient Blob -->
+            <div class="gradient-blob" id="blob"></div>
+            <div class="blur-layer"></div>
+        </section>
+
+        <!-- INFINITE SKILLS MARQUEE -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>Azure</span>
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>Terraform</span>
+                <span>Power BI</span>
+                <span>SQL</span>
+                <span>JavaScript</span>
+                <span>HTML/CSS</span>
+                <span>Python</span>
+                <span>Git</span>
+                <!-- Duplicate for seamless loop -->
+                <span>Azure</span>
+                <span>Docker</span>
+                <span>Kubernetes</span>
+                <span>Terraform</span>
+                <span>Power BI</span>
+                <span>SQL</span>
+                <span>JavaScript</span>
+                <span>HTML/CSS</span>
+                <span>Python</span>
+                <span>Git</span>
+            </div>
+        </div>
+
+        <!-- PORTFOLIO SECTION (BENTO GRID) -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2 class="section-title">Latest <span class="gradient-text">Projects</span></h2>
+                <div class="bento-grid">
+                    <!-- Project 1: Cloud Capstone (Large Feature) -->
+                    <article class="bento-card feature-card">
+                        <div class="card-content">
+                            <span class="tag">Azure & Cloud</span>
+                            <h3>Cloud Computing Capstone</h3>
+                            <p>Led a "lift-and-shift" migration to Azure for a local business. Implemented NoSQL
+                                databases and managed the agile workflow via Jira.</p>
+                        </div>
+                        <div class="card-visual visual-cloud"></div>
+                    </article>
+
+                    <!-- Project 2: Web Dev (Medium) -->
+                    <article class="bento-card">
+                        <div class="card-content">
+                            <span class="tag">Web Development</span>
+                            <h3>Non-Profit Redesign</h3>
+                            <p>Modernized a non-profit site for better accessibility using Node.js and WordPress.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Data (Medium) -->
+                    <article class="bento-card">
+                        <div class="card-content">
+                            <span class="tag">Data & Automation</span>
+                            <h3>Inventory Dashboards</h3>
+                            <p>Power BI & Excel solutions tracking nationwide device deployment.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESUME / REACH ME SECTION -->
+        <section id="contact" class="section contact-section">
+            <div class="container text-center">
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <div class="contact-card">
+                    <p class="contact-text">
+                        Open to <strong>Data & Analytics</strong> roles.<br>
+                        Based in Ottawa/Montréal (or Remote).
+                    </p>
+                    <div class="contact-actions">
+                        <a href="mailto:hello@example.com" class="btn btn-primary big-btn">Email Me</a>
+                        <a href="AndrewsCV.docx" class="btn btn-outline big-btn" download>Get Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Andrew Brown.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
